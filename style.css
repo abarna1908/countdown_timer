@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+#home {
+width: 100%;
+	height: 100vh;
+  background: url(bgImg.jpg);
+	background-size: 100% 100%;
+  display: flex;
+	flex-direction: column;
+  justify-content: center;
+  align-items: center;	
+  color: white;
+}
+#heading-sale{
+	font-size: 5vw;
+	margin-bottom: 10vh;
+}
+#clock {
+	display: flex;
+	position: relative;
+	line-height: 21vh;
+	height: 20vh;
+	color: rgba(255,255,255,0.7);
+  font-size: 12vw;
+  font-family: "Courier New", Courier, monospace;
+	overflow: hidden;
+}
+#time{
+	color: grey;
+	font-size: 5vh;
+	width: 85vw;
+	display: flex;
+	justify-content: space-around;
+}
+.frame{
+	flex: 1;
+	font-size: 3vw;
+	text-align: center;
+	font-weight: bold;
+}
+.move {
+  animation: move ease-in-out 1s infinite;
+}
+
+@keyframes move {
+  from {
+    transform: translateY(0vh);
+  }
+  to {
+    transform: translateY(-25vh);
+  }
+}
+
+
+
